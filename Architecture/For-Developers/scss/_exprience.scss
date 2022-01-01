@@ -1,0 +1,14 @@
+.twenty-five{
+    font-size: 13.75rem;
+    font-weight: bold;
+}
+
+@media(max-width: 300px) {
+    .exprience-mobile{
+        flex-direction: column;
+    }
+    .exprience-mobile-txt{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}

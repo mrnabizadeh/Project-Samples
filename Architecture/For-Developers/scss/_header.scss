@@ -1,0 +1,25 @@
+header{
+    height: 88.9vh;
+    background-image: url(../images/header2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+header h1{
+    text-shadow: 2px 2px black;
+}
+
+header p{
+    text-shadow: 1.5px 1px black;
+    font-weight: bold;
+}
+
+.yellow-box-header{
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+.yellow-box-header:hover{
+    transform: rotate(90deg);
+    transform: scale(1.3);
+}

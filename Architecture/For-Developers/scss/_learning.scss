@@ -1,0 +1,7 @@
+.yellow-box-learning{
+    transition: all 2s;
+    &:hover{
+        transform: rotate(410deg);
+    }
+}
+

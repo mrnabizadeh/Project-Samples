@@ -1,0 +1,25 @@
+*{
+    direction: rtl;
+    text-align: right;
+}
+
+.yellow-box{
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffc800;
+}
+
+p, .line-height{
+    line-height: 30px !important;
+}
+
+.brown-txt{
+     color: rgb(196, 146, 111);
+}     
+
+@media (max-width: 768px) {
+    h2{
+        text-align: center;
+        margin: 15px 0;
+    }
+}

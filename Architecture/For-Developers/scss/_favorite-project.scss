@@ -1,0 +1,41 @@
+.favorite-project{
+    position: relative;
+}
+
+.favorite-project-bg{
+    background-image: url(../images/4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 109vh;
+    padding-top: 25%;
+    & img{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .favorite-project-bg{
+        padding-top: 20%;
+        & h2{
+            color: #ffae00ce !important;
+            text-shadow: 1px 1px black;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .favorite-project-bg{
+        background-image: none;
+        margin-bottom: 0 !important;
+        padding-top: 0;
+        & p{
+            color: white;
+        }
+        & img{
+            display: block;
+        }
+        & h2{
+            text-align: center;
+        }
+    }
+}
