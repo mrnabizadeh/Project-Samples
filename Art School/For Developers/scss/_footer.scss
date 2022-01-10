@@ -1,0 +1,9 @@
+@import "./global";
+
+footer input, footer textarea{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.form-btn{
+     @include my-btn;
+}

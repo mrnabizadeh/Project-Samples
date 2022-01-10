@@ -1,0 +1,7 @@
+@import "./global";
+
+.hear-from-you{
+    & a{
+        @include my-btn;
+    }
+}

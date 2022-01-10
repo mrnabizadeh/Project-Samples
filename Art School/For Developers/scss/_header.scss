@@ -1,0 +1,47 @@
+header{
+    height: 91vh;
+    background-image: url(../images/1.jpeg);
+    background-size: cover;
+    & h1{
+        margin-left: 18%;
+    }
+}
+
+.art{
+    margin: 12% 0;
+    font-weight: bold;
+}
+
+.school{
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+
+@media (max-width: 576px) {
+    .art{
+        margin: 20% 0;
+    }
+}
+
+@media (max-width: 446px) {
+    
+    header h1{
+        margin-left: 10%;
+    }
+    
+    .art{
+        margin: 25% 0;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .art{
+        margin-top: 35%;
+    }
+
+    .school{
+        font-size: 60px;
+    }
+}

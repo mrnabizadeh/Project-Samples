@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700');
+
+
+.art-school-logo{
+    font-family: 'The Nautigal', cursive;
+}
+
+nav ul a {
+    font-weight: bold;
+    &:hover{
+        background-color: white;
+        border-radius: 3px;
+        color: black !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-mobile{
+        padding-right: 0 !important;
+        padding: 30px 0;
+    }
+
+    .art-school-mobile{
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-mobile{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .menu-mobile a{
+        margin: 25px 0;
+    }
+}
