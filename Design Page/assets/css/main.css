@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swapfamily=The+Nautigal:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: rgb(85, 48, 34);
+}
+
+nav a{
+    font-weight: bold;
+    transition: all .3s;
+}
+
+nav a:hover{
+    background-color: rgba(202, 151, 128, 0.26);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-form{
+        margin: 50px 0 !important;
+    }
+
+    .my-nav-links{
+        align-items: center;
+        margin: 0 !important;
+        flex-direction: column !important;
+    }
+
+    .my-nav-links li{
+        margin: 20px 0;
+    }
+}
+
+header h2{
+    font-family: 'EB Garamond', serif;
+}
+
+.design-txt, .the-quote{
+    font-family: 'Yellowtail', cursive;
+}
+
+@media (max-width: 768px) {
+    .design-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.header-img{
+    background: linear-gradient(to right, white, rgb(211, 231, 240));
+}
+
+.header-img img{
+    transition: border-radius .3s, transform 2s;
+    transform-origin: top left;
+}
+
+.header-img img:hover{
+    transform: rotate(20deg);
+    border-radius: 0% !important;
+}
+
+.the-quote{
+    font-size: 20px;
+}
+
+@media (max-width: 469px) {
+    .the-quote{
+        padding: 0 !important;
+    }
+}
+
+.the-book{
+    transform: rotate(20deg);
+    right: 34%;
+}
+
+.any-styles{
+    top: 100%;
+}
+
+.bg-styles{
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 12.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .styles-txt{
+        justify-content: center !important;
+    }
+
+    .any-styles{
+        text-align: center;
+    }
+
+    .the-book, .the-book-mobile, .styles-txt, .any-styles{
+        position: static !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .the-book-mobile, .flowers-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .the-book-mobile{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .the-book{
+        margin-top: 50px;
+        transform: rotate(0);
+        width: 70%;
+    }
+
+    .flowers{
+        border-radius: 0% !important;
+        width: 70%;
+    }
+}
+
+.taste{
+    margin-top: 3.25rem;
+}
+
+@media(max-width: 992px) {
+    .taste-txt-mobile{
+        text-align: center !important;
+    }
+}
+
+.architecture{
+    font-family: 'Redressed', cursive;
+}
+
+@media (max-width: 768px) {
+    .architecture, .architecture-txt{
+        text-align: center;
+    }
+}
+
+.architecture-pics{
+    background-color: rgb(247, 220, 110);
+    min-height: 90vh;
+}
+
+.bridge{
+    width: 29rem;
+    top: 30%;
+    right: 60%;
+}
+
+.cafe{
+    width: 22rem;
+    top: 3%;
+    right: -12%;
+}
+
+@media (max-width: 992px) {
+
+    .taste{
+        margin-bottom: 18rem;
+    }
+
+    .architecture-pics{
+        min-height: 50vh;
+    }
+
+    .bridge{
+        top: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .taste{
+        margin-bottom: 5rem;
+    }
+
+    .architecture-pics, .bridge, .cafe{
+        position: static !important;
+    }
+
+    .architecture-pics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        background-color: white;
+    }
+
+    .bridge{
+        margin-top: 30px;
+    }
+
+    .cafe, .bridge{
+        width: 95%;
+    }
+}
+
+.secret{
+    background-color: rgb(247, 220, 110);
+}
+
+.secret h2, .secret p, .stair{
+    margin-right: -17%;
+}
+
+.stair-layout{
+    z-index: 1;
+}
+
+.footer-img{
+    background-image: url(../images/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-opacity{
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.under-footer{
+    background-color: rgb(61, 41, 27);
+}
+
+.under-footer a{
+    font-weight: bold;
+}
