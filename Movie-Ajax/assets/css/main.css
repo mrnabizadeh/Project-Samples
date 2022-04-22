@@ -1,0 +1,21 @@
+.invisible{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #genres ,#rating, #network{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 524px) {
+
+    .nav-mobile{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .profile-mobile{
+        margin-bottom: 2rem;
+    }
+}
