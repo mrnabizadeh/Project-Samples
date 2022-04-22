@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Sudoku</title>
+
+    <style>
+        .border-red{
+            border: 3px solid red;
+        }
+
+        .border-yellow{
+            border: 3px solid rgb(255, 209, 3);
+        }
+
+        .text-yellow{
+           color: rgb(255, 209, 3); 
+           text-shadow: 1px 1px 1px black;
+           letter-spacing: 2px;
+        }
+
+        .border-purple{
+            border: 3px solid rgb(87, 17, 167);
+        }
+
+        .text-purple{
+            color: rgb(87, 17, 167);
+        }
+
+        .form-control{
+            border: 3px solid rgb(177, 174, 174);
+        }
+
+        input{
+            display: inline-block !important;
+            text-align: center;
+            margin: 2px 0;
+            width: 53px !important;
+            height: 53px !important;
+        }
+
+        .cursor{
+            cursor: default;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center bg-dark p-5">
+                <img src="./sudoku.jpg" alt="" width="50%" data-aos="fade-up"
+                data-aos-duration="3000">
+            </div>
+            <div class="col-12">
+                <h1 class="text-center my-5">
+                    SOLVE SUDOKU
+                </h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div id="sudoku">
+                    <div>
+                        <input type="number" value="1" readonly class="cursor">
+                        <input type="number" value="2" readonly class="cursor">
+                        <input type="number" value="8" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="6" readonly class="cursor">
+                        <input type="number" value="7" readonly class="cursor">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number">
+                    </div>
+                    
+                    <div>
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number" value="7" readonly class="cursor">
+                        <input type="number" value="1" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                    </div>
+            
+                    <div>
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="8" readonly class="cursor">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="1" readonly class="cursor">
+                        <input type="number" value="6" readonly class="cursor">
+                        <input type="number" value="4" readonly class="cursor">
+                    </div>
+            
+                    <div>
+                        <input type="number" value="3" readonly class="cursor">
+                        <input type="number" value="6" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="8" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="7" readonly class="cursor">
+                        <input type="number">
+                    </div>
+            
+            
+                    <div>
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="3" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="7" readonly class="cursor">
+                        <input type="number" value="4" readonly class="cursor">
+                        <input type="number" value="1" readonly class="cursor">
+                        <input type="number">
+                    </div>
+            
+                    <div>
+                        <input type="number" value="4" readonly class="cursor">
+                        <input type="number" value="7" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="5" readonly class="cursor">
+                    </div>
+            
+                    <div>
+                        <input type="number">
+                        <input type="number" value="8" readonly class="cursor">
+                        <input type="number" value="6" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="4" readonly class="cursor">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number" value="9" readonly class="cursor">
+                        <input type="number" value="3" readonly class="cursor">
+                    </div>
+            
+                    <div>
+                        <input type="number">
+                        <input type="number" value="3" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="5" readonly class="cursor">
+                        <input type="number">
+                        <input type="number">
+                        <input type="number">
+                    </div>
+            
+                    <div>
+                        <input type="number">
+                        <input type="number">
+                        <input type="number" value="4" readonly class="cursor">
+                        <input type="number" value="9" readonly class="cursor">
+                        <input type="number" value="2" readonly class="cursor">
+                        <input type="number">
+                        <input type="number" value="6" readonly class="cursor">
+                        <input type="number" value="8" readonly class="cursor">
+                        <input type="number" value="7" readonly class="cursor">
+                    </div>                     
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <button type="button" id="btn" class="btn btn-warning w-50 my-3">
+                    Submit
+                </button>
+            </div>
+            <div class="col-12">
+                <p class="h6 text-center">
+                    <span class="text-danger">
+                        Red:
+                    </span> 
+                    
+                    They are the same
+                </p>
+                <p class="h6 text-center">
+                    <span class="text-purple">
+                        Purple:
+                    </span>  
+                    
+                    Empty
+                </p>
+                <p class="h6 text-center">
+                    <span class="text-yellow">
+                        Yellow:
+                    </span> 
+                    
+                    0 | less than 0 | more than 9
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 p-5 bg-dark text-white text-center">
+        <p class="h4">
+            Ali Nabizadeh
+        </p>
+        <p class="h6">
+            Tehran Institute of Technology
+        </p>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
